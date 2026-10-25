@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIMB FEST-REGISTRATION</title>    
+</head>
+<body>
+    <header>
+    <h1>Welcome to IIMB FEST</h1>
+    <img src="../img/iimblogo.jpg" alt="IIMB LOGO" height="100px">
+    <!-- ADDING HYPERLINK TO AN IMAGE -->
+    <a href="https://blog.iimb.ac.in/wp-content/uploads/2017/05/IIMB-thumb2-e1534478103152.jpg" target="_blank">IIMB IMAGE</a>
+    
+    </header> 
+
+        <a href="home.html">Click here to go back to home page</a>
+
+
+    <section>
+    <h2>Register for the fest</h2>
+    <!-- ADDING A FORM -->
+    <form action="/Register">
+        <!-- ADDING INPUT FIELDS -->
+        <label for="name">Enter your Name:</label>
+        <input type="text" id="name" name="name" required minlength="2" maxlength="15"><br><br>
+       
+        <label for="email">Enter your Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone no">Enter your Phone Number:</label>
+        <input type="number" id="phone no" name="phone no" required ><br><br>
+
+        <!-- ADDING SELECT DROPDOWN -->
+        <label for="t-shirt size">Select your T-shirt size:</label>
+        <select name="t-shirt size" id="t-shirt size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="x-large">X-Large</option>
+        </select><br><br>
+
+        <!-- ADDING CHECKBOXES -->
+         <label for="checkbox">Do you agree to the terms and conditions?</label>
+        <input type="checkbox" name="tnc" id="checkbox" required>
+        <br><br>
+
+        <!-- ADDING A Radio Button -->
+        <label for="alumni">Alumni</label>
+        <input type="radio" name="attendeetype" id="alumni" value="Alumni" required> 
+        <label for="student">Student</label>
+        <input type="radio" name="attendeetype" id="student" value="Student" required>
+
+
+        <button type="submit">Register</button>
+          
+    </form>
+    </section>
+    
+
+</body>    
+</html>
